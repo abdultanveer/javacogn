@@ -2,6 +2,7 @@ package basics;
 class Student{  
 	int rollno;  
 	String name,course;  
+	private String dob;
 	float fee;  
 	Student(int rollno,String name,String course){  
 		this.rollno=rollno;  
@@ -12,8 +13,18 @@ class Student{
 		this(rollno,name,course);//C.T.Error  
 		this.fee=fee;  
 	}  
-	void display(){System.out.println(rollno+" "+name+" "+course+" "+fee);}  
+	void display(){System.out.println(rollno+" "+name+" "+course+" "+fee);} 
+	
+	public int getAge() {
+		return 123;
+	}
+	
+	public void setDob(String sDob) {
+		this.dob = sDob;
+	}
 }  
+
+
 class TestThis8{  
 	public static void main(String args[]){  
 		Student s1=new Student(111,"ankit","java");  

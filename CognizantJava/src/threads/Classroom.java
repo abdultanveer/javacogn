@@ -4,6 +4,7 @@ public class Classroom {
 	
 	public static void main(String[] args) {
 		Friend jhon = new Friend("jhon");
+		jhon.setName("jhon-theo");
 		Friend kenneth = new Friend("kenneth");
 		Friend tyler = new Friend("tyler");
 		

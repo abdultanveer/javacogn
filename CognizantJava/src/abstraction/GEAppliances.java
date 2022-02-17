@@ -1,6 +1,12 @@
 package abstraction;
 
 public class GEAppliances implements SwitchBoardListener{
+	
+	SwitchBoardListener mySwitchBoardListener = this;
+	 public GEAppliances() {
+		// mySwitchBoardListener = sbl;
+		 
+	}
 
 	@Override
 	public void switchOne() {

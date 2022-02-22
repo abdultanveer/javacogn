@@ -23,5 +23,11 @@ public class Student implements Runnable{
 			e.printStackTrace();
 		}
 	}
+	
+	@Override
+	protected void finalize() throws Throwable {
+	// TODO Auto-generated method stub
+	super.finalize();
+	}
 
 }

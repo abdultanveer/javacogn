@@ -1,6 +1,6 @@
 package lamdas;
 
 public interface Printable {
-	void print();
+	void print(String content);
 
 }

@@ -10,6 +10,9 @@ public class Wiring {
 		sbl.switchTwo();
 		sbl.switchThree();
 		sbl.switchFour();
+		int a = 10;
+		
+		System.out.println((a > 9)? true : false);
 	}
 
 }

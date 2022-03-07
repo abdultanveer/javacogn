@@ -7,8 +7,17 @@ public class LifeB4Lamdas {
 		Printable printable = new PrintableImpl();
 		printable.print("my content");
 		//after lamdas 
-		Printable mPrintable = (content) -> {System.out.println("printing something new from lamdas"+content);};
-		mPrintable.print("lamda content");
+		Printable mPrintable = (abc) -> {System.out.println("printing something new from lamdas"+abc);};
+		mPrintable.print("--lamda content");
+		//method reference
+		Printable aPrintable = Ayman::writeCode;
+		aPrintable.print("--s/w requirement");
 	}
 
+}
+
+class Ayman{
+	static void writeCode(String requirement) {
+		System.out.println("ayman is writing the code"+ requirement);
+	}
 }
